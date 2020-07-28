@@ -47,6 +47,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+
+
+
 </head>
 
 <body>
@@ -54,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <!-- mian-content -->
     <div class="main-banner" id="home">
         <!-- header -->
-        <header class="header">
+        <header class="header fixed-top">
             <div class="container-fluid px-lg-5">
                 <!-- nav -->
                 <nav class="py-4">
@@ -80,7 +89,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <li><a href="#">Single Page</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <!-- //nav -->
@@ -743,6 +752,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script>
         AOS.init();
     </script>
+
+
+    <script type="text/javascript">
+        
+        jQuery(window).scroll(function(){
+
+            var height = jQuery(window).scrollTop();
+
+            if(height>30)
+            {
+                jQuery(".header").addClass("sticky-header");
+            }
+            else
+            {
+                jQuery(".header").removeClass("sticky-header");
+            }
+
+        });
+
+    </script>
+
+
+
+
+
+
+
 </body>
 
 </html>
